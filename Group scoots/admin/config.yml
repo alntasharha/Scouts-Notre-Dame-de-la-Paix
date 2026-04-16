@@ -1,0 +1,97 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+search: true
+
+collections:
+  # Scouts
+  - name: "scouts"
+    label: "🏕️ Scouts"
+    folder: "content/scouts"
+    create: true
+    slug: "{{nom}}-{{prenom}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Nom", name: "nom", widget: "string" }
+      - { label: "Prénom", name: "prenom", widget: "string" }
+      - { label: "Totem", name: "totem", widget: "string", required: false }
+      - { label: "Branche", name: "branche", widget: "select", options: ["Louveteaux", "Éclaireurs", "Pionniers", "Routiers"] }
+      - { label: "Date de Naissance", name: "date_naissance", widget: "date", required: false }
+      - { label: "Contact Tuteur", name: "contact", widget: "string", required: false }
+      - { label: "Photo", name: "photo", widget: "image", required: false }
+      - { label: "Actif", name: "actif", widget: "boolean", default: true }
+
+  # Chefs
+  - name: "chefs"
+    label: "👨‍🏫 Chefs & Responsables"
+    folder: "content/chefs"
+    create: true
+    slug: "{{nom}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Nom Complet", name: "nom", widget: "string" }
+      - { label: "Totem", name: "totem", widget: "string" }
+      - { label: "Rôle", name: "role", widget: "select", options: ["Chef de Groupe", "Assistant", "Secrétaire", "Trésorier", "Caissier", "Conseiller", "Chef de Branche", "Assistant de Branche"] }
+      - { label: "Branche", name: "branche", widget: "select", options: ["Général", "Louveteaux", "Éclaireurs", "Pionniers", "Routiers"], required: false }
+      - { label: "Années d'expérience", name: "experience", widget: "number", required: false }
+      - { label: "Photo", name: "photo", widget: "image", required: false }
+      - { label: "Téléphone", name: "telephone", widget: "string", required: false }
+      - { label: "Email", name: "email", widget: "string", required: false }
+      - { label: "Compétences", name: "competences", widget: "list", field: { label: "Compétence", name: "competence", widget: "string" }, required: false }
+      - { label: "Biographie", name: "bio", widget: "text", required: false }
+
+  # Activités
+  - name: "activites"
+    label: "🎯 Activités"
+    folder: "content/activites"
+    create: true
+    slug: "{{titre}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Titre", name: "titre", widget: "string" }
+      - { label: "Type", name: "type", widget: "select", options: ["Camp", "Sortie", "Cérémonie", "Projet", "Formation", "Réunion", "Autre"] }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Lieu", name: "lieu", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Photos", name: "photos", widget: "list", field: { label: "Photo", name: "photo", widget: "image" }, required: false }
+      - { label: "Participants", name: "participants", widget: "list", field: { label: "Nom", name: "participant", widget: "string" }, required: false }
+      - { label: "Statut", name: "statut", widget: "select", options: ["Prévue", "En cours", "Terminée", "Annulée"], default: "Prévue" }
+
+  # Galerie
+  - name: "galerie"
+    label: "📸 Galerie Photos"
+    folder: "content/galerie"
+    create: true
+    slug: "{{titre}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Titre", name: "titre", widget: "string" }
+      - { label: "Catégorie", name: "categorie", widget: "select", options: ["Camps", "Sorties", "Cérémonies", "Formations", "Projets", "Autres"] }
+      - { label: "Date", name: "date", widget: "date" }
+      - { label: "Photos", name: "photos", widget: "list", field: { label: "Photo", name: "photo", widget: "image" } }
+      - { label: "Vidéo (URL)", name: "video", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }
+
+  # Actualités
+  - name: "actualites"
+    label: "📰 Actualités"
+    folder: "content/actualites"
+    create: true
+    slug: "{{titre}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Titre", name: "titre", widget: "string" }
+      - { label: "Date de publication", name: "date", widget: "datetime" }
+      - { label: "Auteur", name: "auteur", widget: "string" }
+      - { label: "Image à la une", name: "image", widget: "image", required: false }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+      - { label: "Publié", name: "published", widget: "boolean", default: true }
