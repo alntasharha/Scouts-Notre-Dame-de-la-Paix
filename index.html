@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scouts NDP - Notre Dame de la Paix de Cathédrale Bukavu</title>
+    <link rel="icon" type="image/png" href="./images/logo-scouts.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./images/logo-scouts.png" alt="Scouts NDP Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                <i class="fas fa-chess-rook" style="display:none; color:#FFD93D; font-size:1.8rem; margin-right:10px;"></i>
+                <span>Scouts NDP</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="#scouts" class="nav-link">Scouts</a></li>
+                <li class="nav-item"><a href="#fondateurs" class="nav-link">Fondateurs</a></li>
+                <li class="nav-item"><a href="#histoire-ndp" class="nav-link">Histoire</a></li>
+                <li class="nav-item"><a href="#dashboard" class="nav-link">Dashboard</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Activités <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#camps"><i class="fas fa-campground"></i> Camps</a></li>
+                        <li><a href="#sorties"><i class="fas fa-hiking"></i> Sorties</a></li>
+                        <li><a href="#activites"><i class="fas fa-running"></i> Activités</a></li>
+                        <li><a href="#ceremonies"><i class="fas fa-award"></i> Cérémonies</a></li>
+                        <li><a href="#projets"><i class="fas fa-tasks"></i> Projets</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#progression" class="nav-link">Progression</a></li>
+                <li class="nav-item"><a href="#calendrier" class="nav-link">Calendrier</a></li>
+                <li class="nav-item"><a href="#galerie" class="nav-link">Galerie</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-background">
+            <img src="images/cathedrale_bukavu.png"alt="Cathédrale Notre Dame de la Paix" />
+        </div>
+        <div class="hero-content">
+            <h1>Scouts Notre Dame de la Paix</h1>
+            <p class="subtitle">Groupe Scout de Cathédrale - Bukavu</p>
+            <p class="motto">"courageux, obéissants, persévérants"</p>
+            <div class="hero-buttons">
+                <a href="#scouts" class="btn btn-primary">Découvrir les Scouts</a>
+                <a href="#contact" class="btn btn-secondary">Nous Rejoindre</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="scout-emblem">
+                <img src="./images/logo-scouts.png" alt="Scouts NDP Logo" class="emblem-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <i class="fas fa-chess-rook" style="display:none; font-size:8rem; color:#FFD93D; transform:rotate(45deg);"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>Notre Groupe</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Le groupe Scout "Notre Dame de la Paix" de Cathédrale Bukavu, fondé le 29/11/1994 par  Dr Justin  styno B ARUTI dit Civette ,Simon Gloire IRENGE dit MAki Laborieux ,Rugushwa CHINYAMUGU dit oURS dévoué, Safari KULU dit Ecureuil Indicatif et CHUMA dit cerf Agile , est une communauté historique de jeunes engagés dans les valeurs du scoutisme.</p>
+                    <p>Avec plus de 31 ans d'existence, nous continuons la tradition de formation des jeunes responsables, autonomes et solidaires à travers des activités éducatives, des aventures en plein air et des services communautaires.</p>
+                    <div class="values">
+                        <div class="value">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Fraternité</h3>
+                        </div>
+                        <div class="value">
+                            <i class="fas fa-heart"></i>
+                            <h3>Service</h3>
+                        </div>
+                        <div class="value">
+                            <i class="fas fa-mountain"></i>
+                            <h3>Aventure</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3 class="stat-number">100+</h3>
+                        <p>Scouts Actifs</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number">8</h3>
+                        <p>Chefs Expérimentés</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number">30+</h3>
+                        <p>Années d'Existence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scouts Section -->
+    <section id="scouts" class="scouts-section">
+        <div class="container">
+            <h2>Nos Scouts</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="louveteaux">Louveteaux</button>
+                <button class="filter-btn" data-filter="eclaireurs">Éclaireurs</button>
+                <button class="filter-btn" data-filter="pionniers">Pionniers</button>
+                <button class="filter-btn" data-filter="routiers">Routiers</button>
+            </div>
+            <div class="scouts-grid" id="scoutsGrid">
+                <!-- Scouts will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Fondateurs Section -->
+    <section id="fondateurs" class="fondateurs-section">
+        <div class="container">
+            <h2>Nos Fondateurs</h2>
+            <p class="section-intro">Les pionniers qui ont créé le Groupe Scouts NDP et posé les fondements de notre tradition scoute en 1994.</p>
+            <div class="fondateurs-grid">
+                <!-- Fondateur 1 -->
+                <div class="fondateur-card">
+                    <div class="fondateur-photo">
+                        <img src="./images/fondateur-civette.jpg" alt="Dr Justin STYNO B ARUTI" onerror="this.src='./images/default-avatar.png'">
+                        <div class="fondateur-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="fondateur-info">
+                        <h3>Dr Justin STYNO B ARUTI</h3>
+                        <p class="fondateur-nom">dit <strong>Civette</strong></p>
+                        <p class="fondateur-role">Fondateur</p>
+                        <p class="fondateur-description">Pionnier du groupe NDP, il a posé les premières pierres de notre communauté scoute avec vision et détermination.</p>
+                    </div>
+                </div>
+
+                <!-- Fondateur 2 -->
+                <div class="fondateur-card">
+                    <div class="fondateur-photo">
+                        <img src="./images/fondateur-maki.jpg" alt="Simon Gloire IRENGE" onerror="this.src='./images/default-avatar.png'">
+                        <div class="fondateur-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="fondateur-info">
+                        <h3>Simon Gloire IRENGE</h3>
+                        <p class="fondateur-nom">dit <strong>Maki Laborieux</strong></p>
+                        <p class="fondateur-role">Fondateur</p>
+                        <p class="fondateur-description">Travailleur infatigable, il a contribué au développement des activités et à la formation des premiers scouts.</p>
+                    </div>
+                </div>
+
+                <!-- Fondateur 3 -->
+                <div class="fondateur-card">
+                    <div class="fondateur-photo">
+                        <img src="./images/fondateur-ours.jpg" alt="Rugushwa CHINYAMUGU" onerror="this.src='./images/default-avatar.png'">
+                        <div class="fondateur-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="fondateur-info">
+                        <h3>Rugushwa CHINYAMUGU</h3>
+                        <p class="fondateur-nom">dit <strong>Ours Dévoué</strong></p>
+                        <p class="fondateur-role">Fondateur</p>
+                        <p class="fondateur-description">Dévoué corps et âme à la cause scoute, il a été le gardien de nos valeurs et traditions.</p>
+                    </div>
+                </div>
+
+                <!-- Fondateur 4 -->
+                <div class="fondateur-card">
+                    <div class="fondateur-photo">
+                        <img src="./images/fondateur-ecureuil.jpg" alt="Safari KULU" onerror="this.src='./images/default-avatar.png'">
+                        <div class="fondateur-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="fondateur-info">
+                        <h3>Safari KULU</h3>
+                        <p class="fondateur-nom">dit <strong>Ecureuil Indicatif</strong></p>
+                        <p class="fondateur-role">Fondateur</p>
+                        <p class="fondateur-description">Son énergie et sa vivacité ont animé les premières années du groupe avec enthousiasme.</p>
+                    </div>
+                </div>
+
+                <!-- Fondateur 5 -->
+                <div class="fondateur-card">
+                    <div class="fondateur-photo">
+                        <img src="./images/fondateur-cerf.jpg" alt="CHUMA" onerror="this.src='./images/default-avatar.png'">
+                        <div class="fondateur-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="fondateur-info">
+                        <h3>CHUMA</h3>
+                        <p class="fondateur-nom">dit <strong>Cerf Agile</strong></p>
+                        <p class="fondateur-role">Fondateur</p>
+                        <p class="fondateur-description">Agile et déterminé, il a été un pilier dans l'organisation et la structure du groupe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chefs Section -->
+    <section id="chefs" class="chefs-section">
+        <div class="container">
+            <h2>Direction du Groupe</h2>
+            <div class="chefs-grid" id="chefsGrid">
+                <!-- Chef Principal -->
+                <div class="chef-card">
+                    <div class="chef-photo">
+                        <img src="./images/MUSHAMLIRWA MIGABO Christian dit EIDER Habile.png" alt="Chef Principal" onerror="this.src='./images/default-avatar.png'">
+                        <div class="chef-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>LOSAKA LOKEKA Moise dit MANDRILL Defernt</h3>
+                        <p class="chef-title">Chef de Groupe</p>
+                        <p class="chef-experience">14 ans d'expérience</p>
+                        <div class="chef-competences">
+                            <span class="competence">Leadership</span>
+                            <span class="competence">Management</span>
+                            <span class="competence">Formation</span>
+                        </div>
+                        <div class="chef-description">
+                            <p>Responsable de la coordination générale du groupe NDP, avec une expertise en développement jeunesse et management d'équipe.</p>
+                        </div>
+                        <div class="chef-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i> 
+                                <span>Téléphone: +243 </span>
+                            </div>
+                            
+                    
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i> 
+                                <span>Email: losaka.moke@scoutsndp.org</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chef Adjoint -->
+                <div class="chef-card">
+                    <div class="chef-photo">
+                        <img src="./images/ASHUZA BIGURU Aimable dit SANDELING Inamissible.jpeg" alt="Chef Adjoint" onerror="this.src='./images/default-avatar.png'">
+                        <div class="chef-badge">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>MUSHAMLIRWA NTABASHWA Julien dit BARTAVELLE Inventif</h3>
+                        <p class="chef-title">secretaire</p>
+                        <p class="chef-experience">15 ans d'expérience</p>
+                        <div class="chef-competences">
+                            <span class="competence">Rédaction</span>
+                            <span class="competence">Archives</span>
+                            <span class="competence">Communication,Administration</span>
+                        </div>
+                        <div class="chef-description">
+                            <p>Spécialisée dans la formation des jeunes et l'organisation des activités pédagogiques, elle assure la coordination des branches.</p>
+                        </div>
+                        <div class="chef-contact">
+                            <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                            <i class="fas fa-envelope"></i> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trésorier -->
+                <div class="chef-card">
+                    <div class="chef-photo">
+                        <img src="./images/MUSHAMLIRWA MIGABO Christian dit EIDER Habile.png" alt="Trésorier" onerror="this.src='./images/default-avatar.png'">
+                        <div class="chef-badge">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Leon MUHIGIRWA AMPIRE dit ROLLIER Entreprennet</h3>
+                        <p class="chef-title">Assitant du chef de groupe</p>
+                        <p class="chef-experience">12 ans d'expérience</p>
+                        <div class="chef-competences">
+                            <span class="competence">Comptabilité</span>
+                            <span class="competence">Leadership</span>
+                            <span class="competence">Rapports</span>
+                        </div>
+                        <div class="chef-description">
+                            <p>Gère les finances du groupe, établit les budgets annuels et supervise les collectes de fonds pour les activités.</p>
+                        </div>
+                        <div class="chef-contact">
+                            <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                            <i class="fas fa-envelope"></i> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secrétaire -->
+                <div class="chef-card">
+                    <div class="chef-photo">
+                        <img src="./images/Lui cest le chef irrawady assistant secretaire.jpeg" alt="Assistant Secrétaire" onerror="this.src='./images/default-avatar.png'">
+                        <div class="chef-badge">
+                            <i class="fas fa-pen"></i>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>MURHANDIKIREYE Jesse dit IRRAWADY</h3>
+                        <p class="chef-title">Assistant Secrétaire</p>
+                        <p class="chef-experience">8 ans d'expérience</p>
+                        <div class="chef-competences">
+                            <span class="competence">Communication</span>
+                            <span class="competence">Administration</span>
+                            <span class="competence">Comptabilités</span>
+                        </div>
+                        <div class="chef-description">
+                            <p>Responsable de la gestion administrative, des archives du groupe et de la communication officielle avec les partenaires.</p>
+                        </div>
+                        <div class="chef-contact">
+                            <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                            <i class="fas fa-envelope"></i> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chargé de Formation -->
+                <div class="chef-card">
+                    <div class="chef-photo">
+                        <img src="./images/chargé-formation.jpg" alt="Chargé de Formation" onerror="this.src='./images/default-avatar.png'">
+                        <div class="chef-badge">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Olande MAHUGO dit RORQUAL Patent</h3>
+                        <p class="chef-title">Chargé de Formation</p>
+                        <p class="chef-experience">10 ans d'expérience</p>
+                        <div class="chef-competences">
+                            <span class="competence">Pédagogie</span>
+                            <span class="competence">Religion</span>
+                            <span class="competence">Évaluation</span>
+                        </div>
+                        <div class="chef-description">
+                            <p>Conçoit et anime les programmes de formation pour les chefs et les jeunes, garantissant la qualité pédagogique du groupe.</p>
+                        </div>
+                        <div class="chef-contact">
+                            <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                            <i class="fas fa-envelope"></i> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chargé des Activités -->
+                <div class="chef-card">
+                    <div class="chef-photo">
+                        <img src="./images/chargé-activités.jpg" alt="Chargé des Activités" onerror="this.src='./images/default-avatar.png'">
+                        <div class="chef-badge">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>LUKOGO DUNIA Urbain dit PROTELE Detendu</h3>
+                        <p class="chef-title">Chargée des Activités</p>
+                        <p class="chef-experience">7 ans d'expérience</p>
+                        <div class="chef-competences">
+                            <span class="competence">Organisation</span>
+                            <span class="competence">Logistique</span>
+                            <span class="competence">Sécurité</span>
+                        </div>
+                        <div class="chef-description">
+                            <p>Planifie et coordonne toutes les activités du groupe : camps, sorties, cérémonies et événements spéciaux.</p>
+                        </div>
+                        <div class="chef-contact">
+                            <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                            <i class="fas fa-envelope"></i> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conseil d'Administration Section -->
+    <section id="conseil-administration" class="conseil-section">
+        <div class="container">
+            <h2>Conseil d'Administration</h2>
+            <div class="conseil-grid">
+                <!-- Chargé de Communication -->
+                <div class="conseiller-card">
+                    <div class="conseiller-photo">
+                        <img src="./images/Ndamwenge Mbeetsa Regime dit avocette austere.png.jpeg" alt="Chargé de Communication" onerror="this.src='./images/default-avatar.png'">
+                        <div class="conseiller-badge">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                    </div>
+                    <div class="conseiller-info">
+                        <h3>MUNGWAKOKWA CIGOHO dit LAMMATIN Prompte</h3>
+                        <p class="conseiller-title">Chargé de Communication</p>
+                        <p class="conseiller-experience">5 ans d'expérience</p>
+                        <div class="conseiller-competences">
+                            <span class="competence">Communication</span>
+                            <span class="competence">Médias</span>
+                            <span class="competence">Rédaction</span>
+                        </div>
+                        <div class="conseiller-contact">
+                            <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                            <i class="fas fa-envelope"></i> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caissière -->
+                <div class="conseiller-card">
+                    <div class="conseiller-photo">
+                        <img src="./images/ASHUZA BIGURU Aimable dit SANDELING Inamissible.jpeg" alt="Caissière" onerror="this.src='./images/default-avatar.png'">
+                        <div class="conseiller-badge">
+                            <i class="fas fa-cash-register"></i>
+                        </div>
+                    </div>
+                    <div class="conseiller-info">
+                        <h3>OYUNVA ASTRID Sarah dit AMANDINE Avenante</h3>
+                        <p class="conseiller-title">Caissière</p>
+                        <p class="conseiller-experience">4 ans d'expérience</p>
+                        <div class="conseiller-competences">
+                            <span class="competence">Comptabilité</span>
+                            <span class="competence">Gestion</span>
+                            <span class="competence">Rapports</span>
+                        </div>
+                        <div class="conseiller-contact">
+                            <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                            <i class="fas fa-envelope"></i> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conseiller -->
+                <div class="conseiller-card">
+                    <div class="conseiller-photo">
+                        <img src="./images/MUSHAMLIRWA MIGABO Christian dit EIDER Habile.png" alt="Conseiller" onerror="this.src='./images/default-avatar.png'">
+                        <div class="conseiller-badge">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="conseiller-info">
+                        <h3>J. CLAUDE MUKAMBILWA dit BOUQUETIN- attentif</h3>
+                        <p class="conseiller-title">Conseiller</p>
+                        <p class="conseiller-experience">6 ans d'expérience</p>
+                        <div class="conseiller-competences">
+                            <span class="competence">Conseil</span>
+                            <span class="competence">Stratégie</span>
+                            <span class="competence">Médiation</span>
+                        </div>
+                        <div class="conseiller-contact">
+                            <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                            <i class="fas fa-envelope"></i> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conseiller -->
+                <div class="conseiller-card">
+                    <div class="conseiller-photo">
+                        <img src="./images/Ndamwenge Mbeetsa Regime dit avocette austere.png.jpeg" alt="Conseiller" onerror="this.src='./images/default-avatar.png'">
+                        <div class="conseiller-badge">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="conseiller-info">
+                        <h3>KONDOLI MUCIZA Victorien dit COLVERT-Exubèrent</h3>
+                        <p class="conseiller-title">Conseiller</p>
+                        <p class="conseiller-experience">7 ans d'expérience</p>
+                        <div class="conseiller-competences">
+                            <span class="competence">Animation</span>
+                            <span class="competence">Leadership</span>
+                            <span class="competence">Organisation</span>
+                        </div>
+                        <div class="conseiller-contact">
+                            <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                            <i class="fas fa-envelope"></i> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conseiller -->
+                <div class="conseiller-card">
+                    <div class="conseiller-photo">
+                        <img src="./images/ASHUZA BIGURU Aimable dit SANDELING Inamissible.jpeg" alt="Conseiller" onerror="this.src='./images/default-avatar.png'">
+                        <div class="conseiller-badge">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="conseiller-info">
+                        <h3>NAMA MPIGIRWA Théophile dit LEMMING-significati</h3>
+                        <p class="conseiller-title">Conseiller</p>
+                        <p class="conseiller-experience">8 ans d'expérience</p>
+                        <div class="conseiller-competences">
+                            <span class="competence">Planification</span>
+                            <span class="competence">Évaluation</span>
+                            <span class="competence">Formation</span>
+                        </div>
+                        <div class="conseiller-contact">
+                            <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                            <i class="fas fa-envelope"></i> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsables Section -->
+    <section id="responsables" class="responsables-section">
+        <div class="container">
+            <h2>Nos Responsables</h2>
+            <div class="responsables-content">
+                <!-- Branch Louveteaux -->
+                <div class="branch-section">
+                    <h3><i class="fas fa-paw"></i> Branche Louveteaux (8-12 ans)</h3>
+                    <div class="responsables-grid">
+                        <div class="responsable-card">
+                            <div class="responsable-photo">
+                                <img src="./images/ASHUZA BIGURU Aimable dit SANDELING Inamissible.jpeg" alt="Chef Louveteaux" onerror="this.src='./images/default-avatar.png'">
+                            </div>
+                            <div class="responsable-info">
+                                <h4>MATABARO IRAGI Armand dit SURICATE Enthousiaste</h4>
+                                <p class="role">Chef de Branche Louveteaux</p>
+                                <p class="experience">8 ans d'expérience</p>
+                                <p class="formation">Formation , Pédagogie jeunesse</p>
+                                <div class="responsable-contact">
+                                    <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                                    <i class="fas fa-envelope"></i> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="responsable-card">
+                            <div class="responsable-photo">
+                                <img src="./images/Ndamwenge Mbeetsa Regime dit avocette austere.png.jpeg" alt="Assistant Louveteaux" onerror="this.src='./images/default-avatar.png'">
+                            </div>
+                            <div class="responsable-info">
+                                <h4>ISUNGAPALA PONGA Francoise dite HERONNE Accommodante</h4>
+                                <p class="role">Assistante Louveteaux</p>
+                                <p class="experience">3 ans d'expérience</p>
+                                <p class="formation">Formation animation enfantine</p>
+                                <div class="responsable-contact">
+                                    <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                                    <i class="fas fa-envelope"></i> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branch troupe -->
+                <div class="branch-section">
+                    <h3><i class="fas fa-hiking"></i> Branche troupe(12-18 ans)</h3>
+                    <div class="responsables-grid">
+                        <div class="responsable-card">
+                            <div class="responsable-photo">
+                                <img src="./images/MUSHAMLIRWA MIGABO Christian dit EIDER Habile.png" alt="Chef Éclaireurs" onerror="this.src='./images/default-avatar.png'">
+                            </div>
+                            <div class="responsable-info">
+                                <h4>MURIMBE WADJA Amrani dit RAGOMDIN Servile</h4>
+                                <p class="role">Chef de troupe </p>
+                                <p class="experience">12 ans d'expérience</p>
+                                <p class="formation">Secourisme, Randonnée</p>
+                                <div class="responsable-contact">
+                                    <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                                    <i class="fas fa-envelope"></i> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="responsable-card">
+                            <div class="responsable-photo">
+                                <img src="./images/Elle c est la cheftaine Minette, njo ACT.jpeg" alt="Assistante Chef de Troupe" onerror="this.src='./images/default-avatar.png'">
+                            </div>
+                            <div class="responsable-info">
+                                <h4>DORCAS MURHANDIKIRE dite MINETTE Austere</h4>
+                                <p class="role">Assistante Chef de Troupe</p>
+                                <p class="experience">5 ans d'expérience</p>
+                                <p class="formation">Formation techniques de camp</p>
+                                <div class="responsable-contact">
+                                    <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                                    <i class="fas fa-envelope"></i> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branch compagnie -->
+                <div class="branch-section">
+                    <h3><i class="fas fa-mountain"></i> Branche compagnie  (18-22 ans)</h3>
+                    <div class="responsables-grid">
+                        <div class="responsable-card">
+                            <div class="responsable-photo">
+                                <img src="./images/ASHUZA BIGURU Aimable dit SANDELING Inamissible.jpeg" alt="Chef Pionniers" onerror="this.src='./images/default-avatar.png'">
+                            </div>
+                            <div class="responsable-info">
+                                <h4>ASHUZA BIGURU Aimable dit SANDELING Inamissible</h4>
+                                <p class="role">Chef de compagnie </p>
+                                <p class="experience">15 ans d'expérience</p>
+                                <p class="formation">BLeadership, Projet jeunes</p>
+                                <div class="responsable-contact">
+                                    <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                                    <i class="fas fa-envelope"></i> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="responsable-card">
+                            <div class="responsable-photo">
+                                <img src="./images/Ndamwenge Mbeetsa Regime dit avocette austere.png.jpeg" alt="Assistant Pionniers" onerror="this.src='./images/default-avatar.png'">
+                            </div>
+                            <div class="responsable-info">
+                                <h4>NDAMWENGE MBEETSA Regine dite AVOCETTE Austere</h4>
+                                <p class="role">Assistante </p>
+                                <p class="experience">4 ans d'expérience</p>
+                                <p class="formation">Formation développement durable</p>
+                                <div class="responsable-contact">
+                                    <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branch clan -->
+                <div class="branch-section">
+                    <h3><i class="fas fa-route"></i> Branche clan (20-29 ans)</h3>
+                    <div class="responsables-grid">
+                        <div class="responsable-card">
+                            <div class="responsable-photo">
+                                <img src="./images/MUSHAMLIRWA MIGABO Christian dit EIDER Habile.png" alt="Chef Routiers" onerror="this.src='./images/default-avatar.png'">
+                            </div>
+                            <div class="responsable-info">
+                                <h4>MUSHAMLIRWA MIGABO Christian dit EIDER Habile </h4>
+                                <p class="role">Chef de clan</p>
+                                <p class="experience">10 ans d'expérience</p>
+                                <p class="formation">Management, Insertion professionnelle</p>
+                                <div class="responsable-contact">
+                                    <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                                    <i class="fas fa-envelope"></i> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="responsable-card">
+                            <div class="responsable-photo">
+                                <img src="./images/Ndamwenge Mbeetsa Regime dit avocette austere.png.jpeg" alt="Assistant Routiers" onerror="this.src='./images/default-avatar.png'">
+                            </div>
+                            <div class="responsable-info">
+                                <h4>TADJIRI BAHOGWERE Chirac dit ALPAGA Clairvoyent</h4>
+                                <p class="role">consultant</p>
+                                <p class="experience">6 ans d'expérience</p>
+                                <p class="formation">Formation entrepreneuriat jeunes</p>
+                                <div class="responsable-contact">
+                                    <i class="fas fa-phone"></i> +243 XXX XXX XXX
+                                    <i class="fas fa-envelope"></i> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Médias Section -->
+    <section id="medias" class="medias-section">
+        <div class="container">
+            <h2>Médias et Activités</h2>
+            
+            <!-- Filtres par type de média -->
+            <div class="media-filters">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="photos">Photos</button>
+                <button class="filter-btn" data-filter="videos">Vidéos</button>
+                <button class="filter-btn" data-filter="camps">Camps</button>
+                <button class="filter-btn" data-filter="sorties">Sorties</button>
+            </div>
+
+            <!-- Galerie de médias -->
+            <div class="medias-grid" id="mediasGrid">
+                <!-- Échantillons de médias -->
+                <div class="media-item" data-category="photos camps">
+                    <div class="media-container">
+                        <img src="./images/camp-ete-2024.jpg" alt="Camp d'été 2024" onerror="this.src='./images/default-media.jpg'">
+                        <div class="media-overlay">
+                            <div class="media-info">
+                                <h4>Camp d'été 2024</h4>
+                                <p>Parc National de Kahuzi-Biega</p>
+                                <span class="media-date">Juillet 2024</span>
+                            </div>
+                            <div class="media-actions">
+                                <button class="btn-view" onclick="viewMedia('camp-ete-2024')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="btn-download" onclick="downloadMedia('camp-ete-2024')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media-item" data-category="videos sorties">
+                    <div class="media-container">
+                        <div class="video-thumbnail">
+                            <img src="./images/randonnee-video-thumb.jpg" alt="Vidéo randonnée" onerror="this.src='./images/default-video.jpg'">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="media-overlay">
+                            <div class="media-info">
+                                <h4>Randonnée Montagne</h4>
+                                <p>Exploration des sentiers de Bukavu</p>
+                                <span class="media-date">Mars 2024</span>
+                                <span class="video-duration">12:45</span>
+                            </div>
+                            <div class="media-actions">
+                                <button class="btn-play" onclick="playVideo('randonnee-montagne')">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn-download" onclick="downloadMedia('randonnee-montagne')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media-item" data-category="photos sorties">
+                    <div class="media-container">
+                        <img src="./images/journee-scoutisme-2024.jpg" alt="Journée scoutisme 2024" onerror="this.src='./images/default-media.jpg'">
+                        <div class="media-overlay">
+                            <div class="media-info">
+                                <h4>Journée du Scoutisme</h4>
+                                <p>Célébration annuelle</p>
+                                <span class="media-date">Mai 2024</span>
+                            </div>
+                            <div class="media-actions">
+                                <button class="btn-view" onclick="viewMedia('journee-scoutisme-2024')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="btn-download" onclick="downloadMedia('journee-scoutisme-2024')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media-item" data-category="videos camps">
+                    <div class="media-container">
+                        <div class="video-thumbnail">
+                            <img src="./images/veille-camp-video-thumb.jpg" alt="Vidéo veillée camp" onerror="this.src='./images/default-video.jpg'">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="media-overlay">
+                            <div class="media-info">
+                                <h4>Veillée de Camp</h4>
+                                <p>Chants et animations autour du feu</p>
+                                <span class="media-date">Août 2024</span>
+                                <span class="video-duration">08:30</span>
+                            </div>
+                            <div class="media-actions">
+                                <button class="btn-play" onclick="playVideo('veille-camp')">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn-download" onclick="downloadMedia('veille-camp')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media-item" data-category="photos camps">
+                    <div class="media-container">
+                        <img src="./images-installation-tentes.jpg" alt="Installation des tentes" onerror="this.src='./images/default-media.jpg'">
+                        <div class="media-overlay">
+                            <div class="media-info">
+                                <h4>Installation des Tentes</h4>
+                                <p>Apprentissage du camp</p>
+                                <span class="media-date">Juin 2024</span>
+                            </div>
+                            <div class="media-actions">
+                                <button class="btn-view" onclick="viewMedia('installation-tentes')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="btn-download" onclick="downloadMedia('installation-tentes')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media-item" data-category="photos sorties">
+                    <div class="media-container">
+                        <img src="./images/service-communautaire.jpg" alt="Service communautaire" onerror="this.src='./images/default-media.jpg'">
+                        <div class="media-overlay">
+                            <div class="media-info">
+                                <h4>Service Communautaire</h4>
+                                <p>Nettoyage du quartier Cathédrale</p>
+                                <span class="media-date">Septembre 2024</span>
+                            </div>
+                            <div class="media-actions">
+                                <button class="btn-view" onclick="viewMedia('service-communautaire')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="btn-download" onclick="downloadMedia('service-communautaire')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulaire d'ajout de média -->
+            <div class="add-media-section">
+                <h3>Ajouter un Média</h3>
+                <form id="addMediaForm" class="media-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="media-title" placeholder="Titre du média" title="Entrez le titre du média" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="mediaType" required>
+                                <option value="">Type de média</option>
+                                <option value="photo">Photo</option>
+                                <option value="video">Vidéo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select id="mediaCategory" required>
+                            <option value="">Catégorie</option>
+                            <option value="camps">Camp</option>
+                            <option value="sorties">Sortie</option>
+                            <option value="activites">Activité</option>
+                            <option value="ceremonie">Cérémonie</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mediaDescription" placeholder="Description du média" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" id="mediaFile" accept="image/*,video/*" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ajouter le Média</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendrier Section -->
+    <section id="calendrier" class="calendrier-section">
+        <div class="container">
+            <h2>Calendrier des Activités</h2>
+            <div class="calendrier-content">
+                <!-- Contrôles du calendrier -->
+                <div class="calendrier-controls">
+                    <div class="month-navigation">
+                        <button id="prevMonth" class="nav-btn" title="Mois précédent">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <h3 id="currentMonth">Avril 2026</h3>
+                        <button id="nextMonth" class="nav-btn" title="Mois suivant">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="view-controls">
+                        <button class="view-btn active" data-view="month" title="Vue mensuelle">
+                            <i class="fas fa-calendar-alt"></i> Mois
+                        </button>
+                        <button class="view-btn" data-view="week" title="Vue hebdomadaire">
+                            <i class="fas fa-calendar-week"></i> Semaine
+                        </button>
+                        <button class="view-btn" data-view="list" title="Vue liste">
+                            <i class="fas fa-list"></i> Liste
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Filtres par branche -->
+                <div class="calendrier-filters">
+                    <label class="filter-label">
+                        <input type="checkbox" class="branch-filter" value="louveteaux" checked>
+                        <span class="filter-badge louveteaux">Louveteaux</span>
+                    </label>
+                    <label class="filter-label">
+                        <input type="checkbox" class="branch-filter" value="eclaireurs" checked>
+                        <span class="filter-badge eclaireurs">Éclaireurs</span>
+                    </label>
+                    <label class="filter-label">
+                        <input type="checkbox" class="branch-filter" value="pionniers" checked>
+                        <span class="filter-badge pionniers">Pionniers</span>
+                    </label>
+                    <label class="filter-label">
+                        <input type="checkbox" class="branch-filter" value="routiers" checked>
+                        <span class="filter-badge routiers">Routiers</span>
+                    </label>
+                    <label class="filter-label">
+                        <input type="checkbox" class="branch-filter" value="groupe" checked>
+                        <span class="filter-badge groupe">Groupe</span>
+                    </label>
+                </div>
+
+                <!-- Grille du calendrier -->
+                <div class="calendrier-grid" id="calendrierGrid">
+                    <!-- En-tête des jours -->
+                    <div class="calendar-header">
+                        <div class="day-header">Dim</div>
+                        <div class="day-header">Lun</div>
+                        <div class="day-header">Mar</div>
+                        <div class="day-header">Mer</div>
+                        <div class="day-header">Jeu</div>
+                        <div class="day-header">Ven</div>
+                        <div class="day-header">Sam</div>
+                    </div>
+                    <!-- Jours du mois (générés par JavaScript) -->
+                    <div class="calendar-days" id="calendarDays">
+                        <!-- Les jours seront générés dynamiquement -->
+                    </div>
+                </div>
+
+                <!-- Liste des événements (vue liste) -->
+                <div class="events-list" id="eventsList" style="display: none;">
+                    <div class="events-header">
+                        <h3>Événements à venir</h3>
+                        <button class="add-event-btn" onclick="openAddEventModal()">
+                            <i class="fas fa-plus"></i> Ajouter un événement
+                        </button>
+                    </div>
+                    <div class="events-container" id="eventsContainer">
+                        <!-- Les événements seront générés dynamiquement -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Événements Section -->
+    <section id="evenements" class="events-section">
+        <div class="container">
+            <h2>Événements à Venir</h2>
+            <div class="events-content">
+                <div class="events-list" id="eventsList">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">AVR</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Camp de Pâques</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Parc National de Kahuzi-Biega</p>
+                            <p><i class="fas fa-clock"></i> 3 jours / 2 nuits</p>
+                            <p class="event-description">Camp annuel avec activités de randonnée, veillées et formation scout.</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">MAI</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Journée du Scoutisme</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Terrain des Scouts NDP</p>
+                            <p><i class="fas fa-clock"></i> 9h00 - 17h00</p>
+                            <p class="event-description">Célébration de la fondation du scoutisme avec jeux, compétitions et remise de badges.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="add-event-form">
+                    <h3>Ajouter un Événement</h3>
+                    <form id="addEventForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="eventName" placeholder="Nom de l'événement" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" id="eventDate" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="eventLocation" placeholder="Lieu de l'événement" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="eventDescription" placeholder="Description détaillée de l'événement" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Ajouter l'Événement</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <h2>Tableau de Bord</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <div class="dashboard-icon"><i class="fas fa-users"></i></div>
+                    <div class="dashboard-info">
+                        <h3 id="totalScouts">100+</h3>
+                        <p>Scouts Actifs</p>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-icon"><i class="fas fa-campground"></i></div>
+                    <div class="dashboard-info">
+                        <h3 id="totalCamps">0</h3>
+                        <p>Camps Prévus</p>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-icon"><i class="fas fa-hiking"></i></div>
+                    <div class="dashboard-info">
+                        <h3 id="totalSorties">0</h3>
+                        <p>Sorties Préparées</p>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-icon"><i class="fas fa-tasks"></i></div>
+                    <div class="dashboard-info">
+                        <h3 id="totalProjetsEnCours">0</h3>
+                        <p>Projets en Cours</p>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-icon"><i class="fas fa-calendar-check"></i></div>
+                    <div class="dashboard-info">
+                        <h3 id="activitesCeMois">0</h3>
+                        <p>Activités ce Mois</p>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-icon"><i class="fas fa-coins"></i></div>
+                    <div class="dashboard-info">
+                        <h3 id="budgetCollecte">0</h3>
+                        <p>Budget Collecté</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mini calendrier du mois -->
+            <div class="dashboard-calendar">
+                <h3>Activités du Mois</h3>
+                <div id="dashboardEvents" class="dashboard-events">
+                    <!-- Événements du mois affichés ici -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camps et Veillées Section -->
+    <section id="camps" class="camps-section">
+        <div class="container">
+            <h2>Camps et Veillées</h2>
+            <div class="section-filters">
+                <button class="filter-btn active" data-filter="all" onclick="filterCamps('all')">Tout</button>
+                <button class="filter-btn" data-filter="camp" onclick="filterCamps('camp')">Camps</button>
+                <button class="filter-btn" data-filter="veillee" onclick="filterCamps('veillee')">Veillées</button>
+                <button class="filter-btn" data-filter="prepare" onclick="filterCampsByStatus('prepare')">Prévus</button>
+                <button class="filter-btn" data-filter="termine" onclick="filterCampsByStatus('termine')">Réalisés</button>
+            </div>
+            <div class="camps-grid" id="campsGrid">
+                <!-- Camps et veillées affichés dynamiquement -->
+            </div>
+            <div class="add-button-container">
+                <button class="btn btn-primary" onclick="openCampModal()">
+                    <i class="fas fa-plus"></i> Ajouter un Camp/Veillée
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sorties Préparées Section -->
+    <section id="sorties" class="sorties-section">
+        <div class="container">
+            <h2>Sorties Préparées et Destinations</h2>
+            <div class="section-filters">
+                <button class="filter-btn active" data-filter="all" onclick="filterSorties('all')">Toutes</button>
+                <button class="filter-btn" data-filter="prepare" onclick="filterSortiesByStatus('prepare')">Préparées</button>
+                <button class="filter-btn" data-filter="termine" onclick="filterSortiesByStatus('termine')">Réalisées</button>
+                <button class="filter-btn" data-filter="louveteaux" onclick="filterSortiesByBranche('louveteaux')">Louveteaux</button>
+                <button class="filter-btn" data-filter="eclaireurs" onclick="filterSortiesByBranche('eclaireurs')">Éclaireurs</button>
+                <button class="filter-btn" data-filter="pionniers" onclick="filterSortiesByBranche('pionniers')">Pionniers</button>
+                <button class="filter-btn" data-filter="routiers" onclick="filterSortiesByBranche('routiers')">Routiers</button>
+            </div>
+            <div class="sorties-grid" id="sortiesGrid">
+                <!-- Sorties affichées dynamiquement -->
+            </div>
+            <div class="add-button-container">
+                <button class="btn btn-primary" onclick="openSortieModal()">
+                    <i class="fas fa-plus"></i> Ajouter une Sortie
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activités Section -->
+    <section id="activites" class="activites-section">
+        <div class="container">
+            <h2>Activités (Faites et Préparées)</h2>
+            <div class="activites-tabs">
+                <button class="tab-btn active" onclick="switchActivitesTab('prepared')">Préparées</button>
+                <button class="tab-btn" onclick="switchActivitesTab('done')">Réalisées</button>
+                <button class="tab-btn" onclick="switchActivitesTab('timeline')">Timeline</button>
+            </div>
+            <div class="section-filters">
+                <button class="filter-btn active" data-filter="all" onclick="filterActivites('all')">Toutes</button>
+                <button class="filter-btn" data-filter="formation" onclick="filterActivites('formation')">Formation</button>
+                <button class="filter-btn" data-filter="pratique" onclick="filterActivites('pratique')">Pratique</button>
+                <button class="filter-btn" data-filter="service" onclick="filterActivites('service')">Service</button>
+                <button class="filter-btn" data-filter="jeu" onclick="filterActivites('jeu')">Jeu</button>
+            </div>
+            <div class="activites-content" id="activitesContent">
+                <!-- Activités affichées dynamiquement -->
+            </div>
+            <div class="add-button-container">
+                <button class="btn btn-primary" onclick="openActiviteModal()">
+                    <i class="fas fa-plus"></i> Ajouter une Activité
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cérémonies Préparées Section -->
+    <section id="ceremonies" class="ceremonies-section">
+        <div class="container">
+            <h2>Cérémonies Préparées</h2>
+            <div class="section-filters">
+                <button class="filter-btn active" data-filter="all" onclick="filterCeremonies('all')">Toutes</button>
+                <button class="filter-btn" data-filter="prepare" onclick="filterCeremoniesByStatus('prepare')">Préparées</button>
+                <button class="filter-btn" data-filter="termine" onclick="filterCeremoniesByStatus('termine')">Réalisées</button>
+                <button class="filter-btn" data-filter="promesse" onclick="filterCeremoniesByType('promesse')">Promesses</button>
+                <button class="filter-btn" data-filter="investiture" onclick="filterCeremoniesByType('investiture')">Investitures</button>
+                <button class="filter-btn" data-filter="religieuse" onclick="filterCeremoniesByType('religieuse')">Religieuses</button>
+            </div>
+            <div class="ceremonies-grid" id="ceremoniesGrid">
+                <!-- Cérémonies affichées dynamiquement -->
+            </div>
+            <div class="add-button-container">
+                <button class="btn btn-primary" onclick="openCeremonieModal()">
+                    <i class="fas fa-plus"></i> Ajouter une Cérémonie
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projets" class="projets-section">
+        <div class="container">
+            <h2>Projets (À Faire et En Cours)</h2>
+            
+            <!-- Résumé des projets -->
+            <div class="projets-summary" id="projetsSummary">
+                <div class="summary-item">
+                    <span class="summary-number" id="projetsTotal">0</span>
+                    <span class="summary-label">Total Projets</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-number" id="projetsAFaire">0</span>
+                    <span class="summary-label">À Faire</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-number" id="projetsEnCours">0</span>
+                    <span class="summary-label">En Cours</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-number" id="projetsTermines">0</span>
+                    <span class="summary-label">Terminés</span>
+                </div>
+                <div class="summary-item budget">
+                    <span class="summary-number" id="budgetGlobal">0%</span>
+                    <span class="summary-label">Budget Collecté</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="budgetProgressBar" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-filters">
+                <button class="filter-btn active" data-filter="all" onclick="filterProjets('all')">Tous</button>
+                <button class="filter-btn" data-filter="a_faire" onclick="filterProjetsByStatus('a_faire')">À Faire</button>
+                <button class="filter-btn" data-filter="en_cours" onclick="filterProjetsByStatus('en_cours')">En Cours</button>
+                <button class="filter-btn" data-filter="termine" onclick="filterProjetsByStatus('termine')">Terminés</button>
+                <button class="filter-btn" data-filter="humanitaire" onclick="filterProjetsByCategory('humanitaire')">Humanitaire</button>
+                <button class="filter-btn" data-filter="environnement" onclick="filterProjetsByCategory('environnement')">Environnement</button>
+                <button class="filter-btn" data-filter="education" onclick="filterProjetsByCategory('education')">Éducation</button>
+            </div>
+            <div class="projets-grid" id="projetsGrid">
+                <!-- Projets affichés dynamiquement -->
+            </div>
+            <div class="add-button-container">
+                <button class="btn btn-primary" onclick="openProjetModal()">
+                    <i class="fas fa-plus"></i> Ajouter un Projet
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progression et Badges Section -->
+    <section id="progression" class="progression-section">
+        <div class="container">
+            <h2>Progression des Scouts et Badges</h2>
+            
+            <!-- Filtres par branche -->
+            <div class="section-filters">
+                <button class="filter-btn active" data-filter="all" onclick="filterProgression('all')">Tous</button>
+                <button class="filter-btn" data-filter="louveteaux" onclick="filterProgression('louveteaux')">Louveteaux</button>
+                <button class="filter-btn" data-filter="eclaireurs" onclick="filterProgression('eclaireurs')">Éclaireurs</button>
+                <button class="filter-btn" data-filter="pionniers" onclick="filterProgression('pionniers')">Pionniers</button>
+                <button class="filter-btn" data-filter="routiers" onclick="filterProgression('routiers')">Routiers</button>
+            </div>
+            
+            <!-- Vue par défaut: Grille des scouts avec progression -->
+            <div class="progression-grid" id="progressionGrid">
+                <!-- Scouts avec barres de progression affichés dynamiquement -->
+            </div>
+            
+            <!-- Vue badges: Grille des badges disponibles -->
+            <div class="badges-section">
+                <h3>Badges Disponibles</h3>
+                <div class="badges-grid" id="badgesGrid">
+                    <!-- Badges affichés dynamiquement -->
+                </div>
+            </div>
+            
+            <div class="add-button-container">
+                <button class="btn btn-primary" onclick="openBadgeModal()">
+                    <i class="fas fa-plus"></i> Attribuer un Badge
+                </button>
+                <button class="btn btn-secondary" onclick="exportProgressionPDF()">
+                    <i class="fas fa-file-pdf"></i> Exporter PDF
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Histoire Section -->
+    <section id="histoire" class="histoire-section">
+        <div class="container">
+            <h2>Histoire du Scoutisme</h2>
+            <div class="histoire-content">
+                <div class="histoire-founder">
+                    <div class="founder-image">
+                        <img src="./images/Robert Baden-Powell.jpg" alt="Robert Baden-Powell" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i class="fas fa-user-tie" style="display:none;"></i>
+                    </div>
+                    <div class="founder-info">
+                        <h3>Robert Baden-Powell (1857-1941)</h3>
+                        <p>Fondateur du scoutisme, militaire britannique qui a créé le mouvement en 1907 après avoir testé ses idées lors d'un camp sur l'île de Brownsea.</p>
+                    </div>
+                </div>
+                
+                <div class="histoire-timeline">
+                    <h3>Les Grandes Dates du Scoutisme</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1907</div>
+                        <div class="timeline-content">
+                            <h4>Premier camp scout</h4>
+                            <p>Baden-Powell organise le premier camp sur l'île de Brownsea avec 20 jeunes.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1908</div>
+                        <div class="timeline-content">
+                            <h4>Publication de "Scouting for Boys"</h4>
+                            <p>Le livre qui lance le mouvement scout mondial.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1994</div>
+                        <div class="timeline-content">
+                            <h4>Fondation des Scouts NDP</h4>
+                            <p>Le 29 novembre 1994, Dr Justin STYNO B ARUTI (Civette), Simon Gloire IRENGE (Maki Laborieux), Rugushwa CHINYAMUGU (Ours Dévoué), Safari KULU (Ecureuil Indicatif) et CHUMA (Cerf Agile) fondent le groupe "Notre Dame de la Paix" à la Cathédrale de Bukavu.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scout-principles">
+                    <h3>Les Principes Fondamentaux du Scoutisme</h3>
+                    <div class="principles-grid">
+                        <div class="principle">
+                            <i class="fas fa-cross"></i>
+                            <h4>Devoir envers Dieu</h4>
+                            <p>Fidélité à ses principes religieux et respect des convictions des autres.</p>
+                        </div>
+                        <div class="principle">
+                            <i class="fas fa-flag"></i>
+                            <h4>Devoir envers le Pays</h4>
+                            <p>Amour de sa patrie, respect des lois et engagement citoyen.</p>
+                        </div>
+                        <div class="principle">
+                            <i class="fas fa-users"></i>
+                            <h4>Devoir envers les Autres</h4>
+                            <p>Solidarité, fraternité et service désintéressé.</p>
+                        </div>
+                        <div class="principle">
+                            <i class="fas fa-user"></i>
+                            <h4>Devoir envers soi-même</h4>
+                            <p>Développement personnel, intégrité et responsabilité.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Équipement Scout Section -->
+    <section class="equipment-section">
+        <div class="container">
+            <h2>Les 5 Éléments Essentiels du Scout</h2>
+            <div class="equipment-grid">
+                <div class="equipment-item">
+                    <div class="equipment-icon">
+                        <i class="fas fa-knife"></i>
+                    </div>
+                    <h3>Le Couteau Suisse</h3>
+                    <p>Outil multifonction indispensable pour les activités de camp, la menuiserie et les travaux manuels.</p>
+                </div>
+                <div class="equipment-item">
+                    <div class="equipment-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>La Boussole</h3>
+                    <p>Essentielle pour l'orientation, la randonnée et les activités d'exploration en nature.</p>
+                </div>
+                <div class="equipment-item">
+                    <div class="equipment-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>La Lampe de Poche</h3>
+                    <p>Indispensable pour les nuits en camp, les veillées et les activités nocturnes.</p>
+                </div>
+                <div class="equipment-item">
+                    <div class="equipment-icon">
+                        <i class="fas fa-first-aid"></i>
+                    </div>
+                    <h3>Le Trousse de Secours</h3>
+                    <p>Pour intervenir rapidement en cas de blessures et assurer la sécurité de tous.</p>
+                </div>
+                <div class="equipment-item">
+                    <div class="equipment-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Le Carnet de Notes</h3>
+                    <p>Pour noter les observations, les progrès et conserver les souvenirs des aventures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soutien Section -->
+    <section id="soutien" class="soutien-section">
+        <div class="container">
+            <h2>Soutenir les Scouts NDP</h2>
+            <div class="soutien-content">
+                <div class="soutien-info">
+                    <h3>Pourquoi nous soutenir ?</h3>
+                    <p>Les Scouts NDP forment plus de 100 jeunes chaque année aux valeurs du scoutisme. Votre aide nous permet d'organiser des camps, d'acheter du matériel et d'offrir des opportunités aux jeunes défavorisés.</p>
+                    
+                    <div class="soutien-stats">
+                        <div class="stat-item">
+                            <h4>100+</h4>
+                            <p>Jeunes formés annuellement</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>4</h4>
+                            <p>Camps organisés par an</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>30+</h4>
+                            <p>Années d'expérience</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="soutien-form">
+                    <h3>Formulaire de Soutien/Sponsoring</h3>
+                    <form id="soutienForm">
+                        <div class="form-group">
+                            <input type="text" id="sponsorName" placeholder="Votre nom ou nom de l'entreprise" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="sponsorEmail" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="sponsorPhone" placeholder="Votre téléphone">
+                        </div>
+                        <div class="form-group">
+                            <select id="sponsorType" required>
+                                <option value="">Type de soutien</option>
+                                <option value="financier">Soutien financier</option>
+                                <option value="materiel">Don de matériel</option>
+                                <option value="benevolat">Bénévolat</option>
+                                <option value="partenariat">Partenariat</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="sponsorMessage" placeholder="Décrivez votre proposition de soutien" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer votre Proposition</button>
+                    </form>
+                </div>
+                
+                <div class="soutien-options">
+                    <h3>Comment nous aider ?</h3>
+                    <div class="options-grid">
+                        <div class="option-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <h4>Dons financiers</h4>
+                            <p>Pour financer les camps et l'achat d'équipement</p>
+                        </div>
+                        <div class="option-item">
+                            <i class="fas fa-camping"></i>
+                            <h4>Matériel de camp</h4>
+                            <p>Tentes, sacs de couchage, matériel de cuisine</p>
+                        </div>
+                        <div class="option-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Formation</h4>
+                            <p>Encadrement technique, formation des chefs</p>
+                        </div>
+                        <div class="option-item">
+                            <i class="fas fa-hands-helping"></i>
+                            <h4>Bénévolat</h4>
+                            <p>Temps et compétences pour nos activités</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerie" class="gallery-section">
+        <div class="container">
+            <h2>Galerie</h2>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p> Notre Dame de la Paix<br>Bukavu, RDC</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+243 XXX XXX XXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>scouts.ndp.bukavu@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Réunions</h3>
+                            <p>Samedi: 14h00 - 17h00<br>Dimanche: 09h00 - 12h00</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <h3>Envoyez-nous un message</h3>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Votre téléphone">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Histoire NDP Section -->
+    <section id="histoire-ndp" class="histoire-ndp-section">
+        <div class="container">
+            <h2>Histoire de NDP</h2>
+            <p class="section-intro">Notre groupe, fondé le 29 novembre 1994, perpétue une tradition scoute riche et vibrante à la Cathédrale de Bukavu.</p>
+            
+            <div class="histoire-ndp-grid">
+                <!-- Origines -->
+                <div class="histoire-card">
+                    <div class="histoire-icon">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <h3>Les Origines</h3>
+                    <p>Cinq scouts du Groupe Scout Lavigerie de Kadutu ont décidé de créer un nouveau groupe à la Cathédrale de Bukavu le <strong>29 novembre 1994</strong> :</p>
+                    <ul>
+                        <li><strong>Dr Justin STYNO B ARUTI</strong> dit Civette « Zélée »</li>
+                        <li><strong>Simon Gloire IRENGE</strong> dit Maki « Laborieux »</li>
+                        <li><strong>Rugushwa CHINYAMUGU</strong> dit Ours « Dévoué »</li>
+                        <li><strong>Safari KULU</strong> dit Ecureuil « Indicatif »</li>
+                        <li><strong>CHUMA</strong> dit Cerf « Agile »</li>
+                    </ul>
+                </div>
+
+                <!-- Patronne -->
+                <div class="histoire-card">
+                    <div class="histoire-icon">
+                        <i class="fas fa-praying-hands"></i>
+                    </div>
+                    <h3>Notre Patronne</h3>
+                    <p>Le nom du groupe est tiré de celui de la <strong>Sainte Vierge Marie, Notre Dame de la Paix</strong>, Patronne de la Cathédrale de Bukavu.</p>
+                    <p class="histoire-highlight">Nous marchons sous sa protection spirituelle depuis 1994.</p>
+                </div>
+
+                <!-- Devise -->
+                <div class="histoire-card">
+                    <div class="histoire-icon">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <h3>Notre Devise</h3>
+                    <div class="devise-box">
+                        <p class="devise-text">COURAGE</p>
+                        <p class="devise-text">OBEISSANCE</p>
+                        <p class="devise-text">PERSEVERENCE</p>
+                    </div>
+                    <p>Les trois piliers qui guident chaque scout NDP dans son parcours.</p>
+                </div>
+
+                <!-- Hymne -->
+                <div class="histoire-card">
+                    <div class="histoire-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Notre Hymne</h3>
+                    <p><strong>« Le Pamplemousse »</strong></p>
+                    <p>Composé par les chefs :</p>
+                    <ul>
+                        <li><strong>Béccasse</strong></li>
+                        <li><strong>Carlin</strong></li>
+                        <li><strong>Takin</strong> (instrumentiste)</li>
+                    </ul>
+                </div>
+
+                <!-- Foulard -->
+                <div class="histoire-card">
+                    <div class="histoire-icon foulard-icon">
+                        <div class="foulard-preview"></div>
+                    </div>
+                    <h3>Nos Couleurs</h3>
+                    <p>Le foulard du groupe est <strong>Vert</strong> au fond avec bordure <strong>Jaune</strong>.</p>
+                    <p><strong>Origine :</strong> Ces couleurs viennent des <strong>bambous</strong> situés au Nord-Est de la Cathédrale, qui étaient naturellement verts et jaunes, de même que la Cathédrale peinte en Vert et Jaune à l'époque.</p>
+                </div>
+
+                <!-- Structure -->
+                <div class="histoire-card">
+                    <div class="histoire-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Notre Structure</h3>
+                    <p>Le groupe s'organise actuellement en <strong>quatre branches</strong> :</p>
+                    <ul class="branches-list">
+                        <li><i class="fas fa-paw"></i> <strong>Meute</strong> (Louveteaux)</li>
+                        <li><i class="fas fa-hiking"></i> <strong>Troupe</strong> (Éclaireurs)</li>
+                        <li><i class="fas fa-mountain"></i> <strong>Compagnie</strong> (Pionniers) - depuis 2000</li>
+                        <li><i class="fas fa-road"></i> <strong>Clan</strong> (Routiers)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Les Chefs Successifs -->
+            <div class="chefs-successifs">
+                <h3>Les Chefs de Groupe Successifs</h3>
+                <p>Depuis 1994, 12 chefs se sont succédé à la tête du groupe :</p>
+                <div class="chefs-timeline">
+                    <div class="chef-period">
+                        <span class="period">1994-1998</span>
+                        <span class="chef-name">Dr. Justin Styno BARUTI dit CIVETTE</span>
+                        <span class="mandats">2 mandats</span>
+                    </div>
+                    <div class="chef-period">
+                        <span class="period">1998-2002</span>
+                        <span class="chef-name">Simon Gloire IRENGE dit MAKI</span>
+                        <span class="mandats">2 mandats</span>
+                    </div>
+                    <div class="chef-period">
+                        <span class="period">2002-2004</span>
+                        <span class="chef-name">Dr. Trésor Stéphane MASANZI dit JAGUAR</span>
+                        <span class="mandats">1 mandat</span>
+                    </div>
+                    <div class="chef-period">
+                        <span class="period">2004-2008</span>
+                        <span class="chef-name">Me. Trésor WILONDJA dit KANGOUROU</span>
+                        <span class="mandats">2 mandats</span>
+                    </div>
+                    <div class="chef-period">
+                        <span class="period">2008</span>
+                        <span class="chef-name">François BACHISHOGA dit BECASSE</span>
+                        <span class="mandats non-acheve">Mandat non achevé</span>
+                    </div>
+                    <div class="chef-period">
+                        <span class="period">2008-2011</span>
+                        <span class="chef-name">Dr. Olivier NAMEGABE dit MARCASSIN</span>
+                        <span class="mandats">1 mandat</span>
+                    </div>
+                    <div class="chef-period">
+                        <span class="period">2011</span>
+                        <span class="chef-name">Conscience KOKO dit MOUFLON</span>
+                        <span class="mandats non-acheve">Mandat non achevé</span>
+                    </div>
+                    <div class="chef-period">
+                        <span class="period">2011-2013</span>
+                        <span class="chef-name">Rodrigue CIRHUZA dit CARLIN</span>
+                        <span class="mandats">1 mandat</span>
+                    </div>
+                    <div class="chef-period">
+                        <span class="period">2013</span>
+                        <span class="chef-name">Richard WILONDJA dit ECUREUIL</span>
+                        <span class="mandats">Intérim</span>
+                    </div>
+                    <div class="chef-period">
+                        <span class="period">2013-2016</span>
+                        <span class="chef-name">Armand BARUTI dit FAUVETTE</span>
+                        <span class="mandats">Intérim puis mandat</span>
+                    </div>
+                    <div class="chef-period">
+                        <span class="period">2016-2020</span>
+                        <span class="chef-name">Ntampaka Thabure Théophile dit SAMOYEDE</span>
+                        <span class="mandats">(29 sept 2016 - 8 fév 2026)</span>
+                    </div>
+                    <div class="chef-period">
+                        <span class="period">2020-2026</span>
+                        <span class="chef-name">Maître KONDOLI Muciza Victorien dit COLVERT</span>
+                        <span class="mandats">2 mandats</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie Section -->
+    <section id="galerie" class="galerie-section">
+        <div class="container">
+            <h2>Galerie Photos</h2>
+            <div class="galerie-content">
+                <div class="galerie-filters">
+                    <button class="filter-btn active" data-filter="all">Toutes</button>
+                    <button class="filter-btn" data-filter="camps">Camps</button>
+                    <button class="filter-btn" data-filter="activites">Activités</button>
+                    <button class="filter-btn" data-filter="ceremonies">Cérémonies</button>
+                    <button class="filter-btn" data-filter="projets">Projets</button>
+                </div>
+                <div class="galerie-grid" id="galerieGrid">
+                    <div class="galerie-item" data-category="camps">
+                        <img src="./images/cathedrale_bukavu.png" alt="Camp d'été">
+                        <div class="galerie-overlay">
+                            <h4>Camp d'été 2024</h4>
+                            <p>Une semaine d'aventure inoubliable</p>
+                        </div>
+                    </div>
+                    <div class="galerie-item" data-category="activites">
+                        <img src="./images/cathedrale_bukavu.png" alt="Randonnée">
+                        <div class="galerie-overlay">
+                            <h4>Randonnée dans la forêt</h4>
+                            <p>Exploration de la nature</p>
+                        </div>
+                    </div>
+                    <div class="galerie-item" data-category="ceremonies">
+                        <img src="./images/cathedrale_bukavu.png" alt="Cérémonie">
+                        <div class="galerie-overlay">
+                            <h4>Cérémonie de promesse</h4>
+                            <p>Nouveaux scouts engagés</p>
+                        </div>
+                    </div>
+                    <div class="galerie-item" data-category="projets">
+                        <img src="./images/cathedrale_bukavu.png" alt="Projet communautaire">
+                        <div class="galerie-overlay">
+                            <h4>Projet environnement</h4>
+                            <p>Nettoyage de la ville</p>
+                        </div>
+                    </div>
+                    <div class="galerie-item" data-category="camps">
+                        <img src="./images/cathedrale_bukavu.png" alt="Veillée">
+                        <div class="galerie-overlay">
+                            <h4>Veillée autour du feu</h4>
+                            <p>Chants et animations</p>
+                        </div>
+                    </div>
+                    <div class="galerie-item" data-category="activites">
+                        <img src="./images/cathedrale_bukavu.png" alt="Construction">
+                        <div class="galerie-overlay">
+                            <h4>Atelier de construction</h4>
+                            <p>Apprentissage des techniques</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soutien Section -->
+    <section id="soutien" class="soutien-section">
+        <div class="container">
+            <h2>Nous Soutenir</h2>
+            <div class="soutien-content">
+                <div class="soutien-cards">
+                    <div class="soutien-card">
+                        <div class="soutien-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Faire un Don</h3>
+                        <p>Votre aide nous permet de continuer nos activités et d'équiper nos scouts.</p>
+                        <button class="btn btn-primary">Faire un don</button>
+                    </div>
+                    <div class="soutien-card">
+                        <div class="soutien-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3>Devenir Bénévole</h3>
+                        <p>Rejoignez notre équipe d'encadreurs et partagez votre expérience.</p>
+                        <button class="btn btn-secondary">Nous rejoindre</button>
+                    </div>
+                    <div class="soutien-card">
+                        <div class="soutien-icon">
+                            <i class="fas fa-partners"></i>
+                        </div>
+                        <h3>Partenariat</h3>
+                        <p>Devenez partenaire et soutenez nos projets éducatifs.</p>
+                        <button class="btn btn-primary">Devenir partenaire</button>
+                    </div>
+                </div>
+                <div class="soutien-info">
+                    <h3>Pourquoi nous soutenir ?</h3>
+                    <div class="soutien-reasons">
+                        <div class="reason-item">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Éducation des jeunes de notre communauté</p>
+                        </div>
+                        <div class="reason-item">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Développement de valeurs citoyennes</p>
+                        </div>
+                        <div class="reason-item">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Projets communautaires impactants</p>
+                        </div>
+                        <div class="reason-item">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Formation aux compétences de vie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Nous Contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Adresse</h3>
+                            <p>Cathédrale Notre Dame de la Paix<br>Avenue de la Cathédrale<br>Bukavu, R.D. Congo</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>+243 <br>+243</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>contact@scoutsndp.org<br>info@scoutsndp.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Heures de réunion</h3>
+                            <p>Samedi: 14h00 - 17h00<br>Dimanche: 09h00 - 12h00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="contactName" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="contactEmail" placeholder="Votre email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="contactSubject" placeholder="Sujet du message" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contactMessage" placeholder="Votre message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Scouts NDP</h3>
+                    <p>Groupe Scout Notre Dame de la Paix </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#scouts">Scouts</a></li>
+                        <li><a href="#chefs">Chefs</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Activités</h3>
+                    <ul>
+                        <li>Camps d'été</li>
+                        <li>Randonnées</li>
+                        <li>Services communautaires</li>
+                        <li>Formation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Scouts NDP </p>
+                <p class="admin-link"><a href="/admin/" target="_blank"><i class="fas fa-cog"></i> Espace Administrateur</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialisation Netlify Identity
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
